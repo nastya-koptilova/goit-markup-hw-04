@@ -198,9 +198,14 @@ header::after {
 }
 
 .benefits__icon-container {
-  padding: 25px 100px 25px 100px;
+  width: 270px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: var(--accent-background-color);
   margin-bottom: 30px;
+  border-radius: 4px;
 }
 
 .benefits__icon {
@@ -327,7 +332,8 @@ header::after {
   fill: currentColor;
 }
 
-.team__social-link:hover {
+.team__social-link:hover,
+.team__social-link:focus {
   background-color: var(--object-active-color);
   color: var(--main-background-color);
 }
@@ -361,7 +367,8 @@ header::after {
   fill: currentColor;
 }
 
-.clients__link:hover {
+.clients__link:hover,
+.clients__link:focus {
   color: var(--object-active-color);
   border: 1px solid var(--object-active-color);
 }
@@ -374,6 +381,7 @@ header::after {
 
 .footer__container {
   display: flex;
+  align-items: baseline;
 }
 
 .footer__contacts-container {
@@ -457,7 +465,8 @@ header::after {
   fill: var(--main-background-color);
 }
 
-.footer__social-link:hover {
+.footer__social-link:hover,
+.footer__social-link:focus {
   background-color: var(--object-active-color);
 }
 
