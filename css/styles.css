@@ -10,6 +10,7 @@
   --button-active-color: #188ce8;
   --header-border-color: #ececec;
   --footer-contacts-color: rgba(255, 255, 255, 0.6);
+  --footer-social-background-color: rgba(255, 255, 255, 0.1);
   --icons-color: #afb1b8;
 }
 
@@ -121,11 +122,7 @@ p {
 
 .header__icon {
   margin-right: 10px;
-  fill: var(--text-description-color);
-}
-
-.header__icon:hover {
-  fill: var(--object-active-color);
+  fill: currentColor;
 }
 
 .header__nav-link:hover,
@@ -154,6 +151,7 @@ header::after {
   max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
+  background-color: var(--footer-background-color);
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/banner.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -208,10 +206,6 @@ header::after {
 .benefits__icon {
   width: 70px;
   height: 70px;
-}
-
-.benefits__title {
-  display: none;
 }
 
 .benefits__list {
@@ -314,33 +308,76 @@ header::after {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  margin-right: 10px;
   align-items: center;
   justify-content: center;
+  color: var(--icons-color);
 }
 
-.team__social:last-child {
+.team__social-list {
+  margin-right: 10px;
+}
+
+.team__social-list:last-child {
   margin-right: 0;
 }
 
 .team__icon {
   width: 20px;
   height: 20px;
-  fill: var(--icons-color);
+  fill: currentColor;
 }
 
 .team__social-link:hover {
   background-color: var(--object-active-color);
+  color: var(--main-background-color);
 }
 
-.team__icon:hover {
-  fill: var(--main-background-color);
+.clients__list {
+  display: flex;
+}
+
+.clients__items {
+  margin-right: 30px;
+}
+
+.clients__link {
+  display: inline-flex;
+  width: 170px;
+  height: 92px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--icons-color);
+  border-radius: 4px;
+  color: var(--icons-color);
+}
+
+.clients__items:last-child {
+  margin-right: 0;
+}
+
+.clients__icon {
+  width: 106px;
+  height: 60px;
+  fill: currentColor;
+}
+
+.clients__link:hover {
+  color: var(--object-active-color);
+  border: 1px solid var(--object-active-color);
 }
 
 .footer {
   background: var(--footer-background-color);
   padding-top: 60px;
   padding-bottom: 60px;
+}
+
+.footer__container {
+  display: flex;
+}
+
+.footer__contacts-container {
+  margin-right: 70px;
 }
 
 .footer__logo {
@@ -383,8 +420,59 @@ header::after {
   color: var(--main-background-color);
 }
 
-.portfolio__title {
-  display: none;
+.footer__social-title {
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--main-background-color);
+  margin-bottom: 20px;
+}
+
+.footer__social {
+  display: flex;
+}
+
+.footer__social-link {
+  display: inline-flex;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--footer-social-background-color);
+}
+
+.footer__social-list {
+  margin-right: 10px;
+}
+
+.footer__social-list:last-child {
+  margin-right: 0;
+}
+
+.footer__icon {
+  width: 20px;
+  height: 20px;
+  fill: var(--main-background-color);
+}
+
+.footer__social-link:hover {
+  background-color: var(--object-active-color);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .portfolio__filter {
@@ -433,6 +521,10 @@ header::after {
 
 .portfolio__card {
   width: 370px;
+}
+
+.portfolio__card:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .portfolio__card-container {
