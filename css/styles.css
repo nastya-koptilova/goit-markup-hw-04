@@ -147,7 +147,7 @@ header::after {
   padding-bottom: 94px;
 }
 
-.banner {
+.hero {
   max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
@@ -160,7 +160,7 @@ header::after {
   padding-bottom: 200px;
 }
 
-.banner__title {
+.hero__title {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -171,7 +171,7 @@ header::after {
   margin-bottom: 30px;
 }
 
-.banner__btn {
+.hero__btn {
   background: var(--object-active-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
@@ -189,7 +189,7 @@ header::after {
   display: block;
 }
 
-.banner__btn:active {
+.hero__btn:active {
   background: var(--button-active-color);
 }
 
